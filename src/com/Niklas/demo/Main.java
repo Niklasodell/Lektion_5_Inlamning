@@ -8,12 +8,13 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Write a number: ");
-        int x = scan.nextInt();
+        do {
 
-        for (int i = 0; i < x; i++) {
-            System.out.println(i);
-        }
+            System.out.println("Skriv vad som: ");
+            String input = scan.nextLine();
 
+            System.out.println("Du skrev: " + input);
+
+        }while (true);
     }
 }
