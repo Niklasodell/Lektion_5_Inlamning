@@ -11,14 +11,18 @@ public class Main {
         boolean skaSluta = true;
 
         do {
-            System.out.println("Skriv vad som: ");
+            System.out.println("Ange ett av följande alternativ: 1 eller stop ");
             String input = scan.nextLine();
 
-            if (input.equalsIgnoreCase("stop")) {
-                skaSluta = false;
-
-            }else {
-                System.out.println("Du skrev: " + input);
+            switch (input.toLowerCase()) {
+                case "1":
+                    System.out.println("Throwing!");
+                    break;
+                case "stop":
+                    skaSluta = false;
+                    break;
+                default:
+                    System.out.println("Fel input");
 
             }
 
