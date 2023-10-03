@@ -8,13 +8,20 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        do {
+        boolean skaSluta = true;
 
+        do {
             System.out.println("Skriv vad som: ");
             String input = scan.nextLine();
 
-            System.out.println("Du skrev: " + input);
+            if (input.equalsIgnoreCase("stop")) {
+                skaSluta = false;
 
-        }while (true);
+            }else {
+                System.out.println("Du skrev: " + input);
+
+            }
+
+        }while (skaSluta);
     }
 }
