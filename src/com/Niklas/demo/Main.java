@@ -8,11 +8,12 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter your name: ");
+        System.out.println("Write a number: ");
+        int x = scan.nextInt();
 
-        String userInput = scan.nextLine();
-
-        System.out.println("Player #1: " + userInput);
+        for (int i = 0; i < x; i++) {
+            System.out.println(i);
+        }
 
     }
 }
